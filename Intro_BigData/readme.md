@@ -136,3 +136,130 @@ The V's of Big Data
    * Enable Adding More Racks
    * Optimized for specific data types
       * Document, Table, Key-Value, Graph, Multimedia, Stream
+
+
+## Hadoop ecosystem
+* Major goals
+   * Enable Scalability to store large volumes of data on cheap commodity hardware
+   * Handle Fault Tolerance: Be ready - crashes happen
+      * ability to gracefully recover from problems
+   * Optimized for a variety data types
+      * text files, graph of social networks, streaming sensor data, raster images
+   * Facilitate a Shared Environment
+      * allow multiple jobs to execute simultaneously
+   * Free to use, easy to find support
+
+
+## Hadoop Distributed File System (HDFS)
+* HDFS: foundation for Hadoop ecosystem. storage layer
+   * Scalability to large data sets
+      * up to 200 PB, 4500 servers, 1 billion files and blocks
+   * Reliability to cope with hardware failures
+* HDFS splits files across nodes for parallel access
+   * default chunk size is 64 megabytes
+   * Replication for fault tolerance: By default, HDFS maintains three copies of every block
+* Customized reading to handle variety of file types. For example, 
+   * Text files can be read "line by line" or "a word" at a time
+   * Geospatial data can be read as vectors or rasters
+* Two key components of HDFS:
+   * NameNode for metadata: usually one per cluster
+      * NameNode issues comments to DataNodes across the cluster
+      * NameNode coordinates operations
+      * Keeps track of file name, location in directory, etc
+      * Mapping of contents on DataNode
+   * DataNode for block storage: usually one per machine (each node in the cluster)
+      * Listen to NameNode for block creation, deletion, replication (Fault tolerance, data locality)
+
+
+## YARN: A Resource Manager for Hadoop
+* Resource manage layer that sits just above the storage layer HDFS
+* Interacts with applications and schedules resources for their use
+   * providing a standard framework that customized application development in the Hadoop ecosystem
+   * Giraph for graph data analysis, Storm for streaming data analysis, Spark for in-memory analysis
+* Essential gears in YARN engine
+   * Central Resource Manager = Ultimate decision maker 
+      * controls all the resources, and decides who gets what
+   * Each machine gets a Node Manager
+      * Node manager operates at machine level and is in charge of a single machine
+   * Application Master = personal negotiator
+      * it negotiates resource from the resource manager
+      * it talks to node manager to get its tasks completed
+   * Container = a machine
+      * abstract notions that signifies a resource that is a collection of CPU memory disk network and other resources within the computer
+
+
+## MapReduce: Simple Programming for Big Results
+* Programming model for the Hadoop ecosystem
+* relies on YARN to schedule and execute parallel processing over the distributed file blocks in HDFS
+* Several tools that use the MapReduce model to provide a higher level interface to other programming models
+   * Hive: SQL like interface that adds capabilities that help with relational data modeling
+   * Pig: high level data flow language that adds capabilities that help with process map modeling
+* Traditional parallel programming requires experties on a number of computing and systems concepts
+* MapReduce programming model greatly simplifies running code in parallel
+   * Map: apply operation to all elements
+      * Paralleization over the input
+   * Shuffle and Sort
+      * Parallelization grouping of data: individual key-value pairs
+   * Reduce: summarize operation on elements
+      * Parallelized to construct one output file
+* MapReduce is bad for
+   * Frequently changing data
+   * Computations, that do have dependencies, cannot be expressed with MapReduce
+   * Interactive analysis: MapReduce does not return any results until the entire process is finished
+
+
+## When to Reconsider Hadoop?
+* Use Hadoop
+   * Future anticipated data growth
+   * Long term availability of data
+   * Want to use multiple applications over the same data store
+   * High Volume, High Variety data
+* Caution to use Hadoop
+   * Small datasets
+   * Advanced Algorithms that require a specific hardware type
+   * Infrastructure replacement
+   * Task level parallelism
+   * Random Data Access
+
+
+## Cloud Computing: An Important Big Data Enabler
+* In-house hardward and software resource building
+   * networking hardware, storage, processors, upgrades
+   * hardware estimation is hard
+   * software stacks are complex: latest, compatible, installation
+* Cloud: IT infrastructure & applications on Rent over the Internet
+   * Pay as you go
+   * Quick implementation
+   * deploying application on a server that is geographically closer to your client
+   * resource estimation solved
+   * work on your domain expertise
+   * instantly get different resources: cpu, gpu, memory, disk
+
+
+## Cloud Service Models: An exploration of choices
+* IaaS: Get the hardware only
+   * you: install and maintain OS, application software
+* PaaS: Get the computing environment
+   * you: application software 
+* SaaS: Get full software on-demand
+   * you: domain goals
+
+
+## Values from Hadoop and Pre-built Hadoop Images
+* e.g., Hortonworks, Cloudera
+* provide step-by-step guides on how to set up pre-built images on the Cloud
+
+
+## Copy your data into the Hadoop Distributed File System: work is done in a virtual machine (cloudera)
+* Download a text file of words: words.txt
+* Open a terminal shell
+* Copy text file from local file sytem to HDFS
+> hadoop fs -copyFromLocal words.txt
+* check the text file was successfuly copied
+> hadoop fs -ls
+* Copy a file within HDFS
+> hadoop fs -cp works.txt words2.txt
+* Copy a file from HDFS to the local file system
+> hadoop fs -copyToLocal words2.txt
+* Delete a file in HDFS
+> hadoop fs -rm words2.txt
