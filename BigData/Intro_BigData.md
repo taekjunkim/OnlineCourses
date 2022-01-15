@@ -1,3 +1,6 @@
+# Introduction to Big Data
+
+
 ## What launched the Big Data era?
 Combination of a growing amount of data and on-demand (e.g., cloud) computing
 * **on-demand computing**: computing anywhere and anytime
