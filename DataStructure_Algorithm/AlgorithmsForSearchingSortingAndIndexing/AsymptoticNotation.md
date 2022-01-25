@@ -13,4 +13,4 @@ The common algorithmic runtimes from fastest to slowest are:
 * exponential: O(2^N)
 * factorial: O(N!)
 
-![BigO_complexity]('https://github.com/taekjunkim/OnlineCourses/blob/main/DataStructure_Algorithm/AlgorithmsForSearchingSortingAndIndexing/imgs/algorithm-time-complexity.png')
+![BigO_complexity](https://github.com/taekjunkim/OnlineCourses/blob/main/DataStructure_Algorithm/AlgorithmsForSearchingSortingAndIndexing/imgs/algorithm-time-complexity.png)
