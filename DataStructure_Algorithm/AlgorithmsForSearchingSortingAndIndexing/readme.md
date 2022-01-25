@@ -2,4 +2,4 @@
 
 * [Insertion Sort](https://github.com/taekjunkim/OnlineCourses/blob/main/DataStructure_Algorithm/AlgorithmsForSearchingSortingAndIndexing/InsertionSort.ipynb)
 * [Asymptotic Notation](https://github.com/taekjunkim/OnlineCourses/blob/main/DataStructure_Algorithm/AlgorithmsForSearchingSortingAndIndexing/AsymptoticNotation.md)
-* Binary Search
+* [Binary Search](https://github.com/taekjunkim/OnlineCourses/blob/main/DataStructure_Algorithm/AlgorithmsForSearchingSortingAndIndexing/BinarySearch.ipynb)
