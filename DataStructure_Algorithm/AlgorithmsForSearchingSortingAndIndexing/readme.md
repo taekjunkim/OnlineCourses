@@ -6,3 +6,5 @@
 * [Merge Sort](https://github.com/taekjunkim/OnlineCourses/blob/main/DataStructure_Algorithm/AlgorithmsForSearchingSortingAndIndexing/MergeSort.ipynb)
 * [Data Structure: What? and Why?](https://github.com/taekjunkim/OnlineCourses/blob/main/DataStructure_Algorithm/AlgorithmsForSearchingSortingAndIndexing/DataStructuresWhatWhy.md)
 * [Heap Data Structure](https://github.com/taekjunkim/OnlineCourses/blob/main/DataStructure_Algorithm/AlgorithmsForSearchingSortingAndIndexing/HeatDataStructure.md)
+
+https://www.coursera.org/learn/algorithms-searching-sorting-indexing/lecture/bnpDU/introduction-to-randomization-average-case-analysis-recurrences
