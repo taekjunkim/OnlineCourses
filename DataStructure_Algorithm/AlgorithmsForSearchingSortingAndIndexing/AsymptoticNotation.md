@@ -8,8 +8,12 @@ The Big-O notation describes the worst-case running time of a program. We comput
 The common algorithmic runtimes from fastest to slowest are: 
 * constant: O(1)
 * logarithmic O(log N)
+  * binary search
 * linear: O(N)
+* divide and conquer: O(N log N)
+  * merge sort
 * polynomial: O(N^2)
+  * insertion sort
 * exponential: O(2^N)
 * factorial: O(N!)
 
