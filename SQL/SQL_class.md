@@ -1,1 +1,13 @@
-
+* Key SQL Clauses
+  - SELECT
+    - Columns or Expressions to be returned
+  - FROM
+    - Table from which to retreive data
+  - WHERE
+    - Row-level filtering
+  - GROUP BY
+    - Group specification
+  - HAVING
+    - Group-level filter 
+  - ORDER BY
+    - Output sort order
