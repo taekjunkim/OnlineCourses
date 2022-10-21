@@ -48,3 +48,34 @@
 * Elevator pitch
   - Even though employers are unlikely to ask you for an elevator pitch directly, having one ready will help you in many situations. It can help you draft a cover letter, speak easily to a potential hirer when you network at an event, answer general interview questions such as “tell us about yourself,” and so on.
   - “Hi, I’m Jonathan Bittmann. I’m a data scientist working toward a move into management. I’ve spent the last six years as a data analyst for a cloud development company, where I’ve developed my skills in programming and served as team leader. While leading several successful project teams, I became interested in data science management and have gone back to school to earn a business administration degree. While I’m working on that, I’m looking for a position in project management so I can put my learning to use. I’m very interested in the work your company does and I think I could bring a lot of expertise and leadership to your organization. Could we meet to discuss the open project manager roles you currently have?”
+
+* Questions to ask
+  - How did you become interested in data scientist role
+  - How did you prepare to enter the field
+  - How did you begin your career
+  - What is a typical workday like for you
+  - What do you like most about your work
+  - What is one of your favorite projects that you have worked on
+  - What is the most difficult challenge you have dealt with
+  - What would you like to accomplish next in your career
+  - What related fields or career paths would you recommend I also look into
+  - How do you stay current or learn new technology
+  - What current issues and trend in the field should I be aware of
+  - What are the most efficient strategy for seeking a position in this field
+
+* STAR method
+  - Situation: The project or challenge you faced
+    - I was on a team that was tasked with moving a database to a new server
+  - Task: Your responsibility in the situation
+    - I was in charge of increasing the query speed of the new deployment
+  - Action: The steps or procedure you followed to solve the problem
+    - I employed a data optimizer, made sure the indexes were improved, and updated the software
+  - Result: What happened after you acted
+    - This brought a 40% increase in query response time
+
+* Questions for the interviewer
+  - What's the next step in the interview/hiring process?
+  - How long does your recruitement process usually take?
+  - What are the primary responsibilities of the position?
+  - What would my day-to-day routine look like if I got the job?
+  - What can you tell me about the job apart from what was in the description?
