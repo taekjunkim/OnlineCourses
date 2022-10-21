@@ -7,4 +7,4 @@ Summarize what I learned from online courses
 
 * [Data Structure and Algorithm](https://github.com/taekjunkim/OnlineCourses/tree/main/DataStructure_Algorithm)
 
-* Data Science Career Guide
+* [Data Science Career Guide](https://github.com/taekjunkim/OnlineCourses/tree/main/DataScienceCareerGuide)
