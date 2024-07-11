@@ -52,7 +52,6 @@ WHERE referee_id <> 2 OR
 <ul>
 Table: World
 
-
 | Column Name | Type    |
 |-------------|---------|
 | name        | varchar |
@@ -70,4 +69,11 @@ A country is big if:
   
 **Write a solution to find the name, population, and area of the big countries.
 Return the result table in any order.**
+
+```sql
+SELECT name, population, area
+FROM World
+WHERE area>=3000000 OR
+    population>=25000000; 
+```
 </ul>
