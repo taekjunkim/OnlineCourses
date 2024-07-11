@@ -18,9 +18,8 @@ Return the result table in any order
 ~~~~sql
 SELECT product_id
 FROM Products
-WHERE 
-  low_fats = 'Y' AND
-  recyclable = 'Y'; 
+WHERE low_fats = 'Y' AND
+    recyclable = 'Y'; 
 ~~~~
 
 
