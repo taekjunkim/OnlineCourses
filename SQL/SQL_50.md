@@ -48,7 +48,7 @@ WHERE referee_id <> 2 OR
 ```
 </ul>         
 
-# 3. 595. Big Countries
+# 3. 595: Big Countries
 <ul>
 Table: World
 
@@ -78,7 +78,7 @@ WHERE area>=3000000 OR
 ```
 </ul>
 
-# 4. 1148. Article Views I
+# 4. 1148: Article Views I
 <ul>
 Table: Views
 
@@ -102,5 +102,4 @@ FROM Views
 WHERE author_id = viewer_id
 ORDER BY author_id; 
 ```
-
 </ul>
